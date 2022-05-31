@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="{%  static  'css/style.css'  %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="/static/js/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body style="background-color:rgb(0, 0, 0)">
+  <div style="padding-left: 100px; float: left; padding-top: 70px; display: none;" id="mapp_img">
+     <table class="table table-striped table-dark  center" style="width:auto">
+      <tbody >
+          <tr>
+              <!--<th scope="row" class="text-center">1</th> -->
+              <td width="300px" id="td1">
+                  <img id="img1" src="" class=" img-thumbnail img-hover">
+              </td>
+          </tr>
+          <tr>
+            <td width="300px" id="td2">
+              <img id="img2" src="" class=" img-thumbnail img-hover">
+            </td>
+          </tr>
+          </tbody>
+          </table>
+        </div>
+
+        <div style="float: center; padding-top: 70px">
+              <div class="container">
+                      <table class="table table-striped table-dark  center" style="width:auto" id="table_Data">
+                          <tbody >
+                              <tr>
+                                  <!--<th scope="row" class="text-center">1</th> -->
+                                  <td width="250px" id="row11" onmouseover="myfunction('/static/images/PASSPORT_SIZE_PIC.jpg','/static/images/Photo.jpg')" onmouseout="hide_div()">
+                                      <img src="/static/images/Books.jpg" class=" img-thumbnail img-hover" alt="Book">
+                                  </td>
+                                  <td width="250px" id="row12" onmouseover="myfunction('/static/images/Books.jpg','/static/images/sunset.jpg')" onmouseout="hide_div()">
+                                    <img src="/static/images/PASSPORT_SIZE_PIC.jpg"  class=" img-thumbnail img-hover"alt="Photo1">
+                                  </td>
+                              </tr>
+                              <tr>
+                                <!--<th scope="row" class="text-center">2</th> -->
+                                  <td width="250px" id="row21" onmouseover="myfunction('/static/images/Books.jpg','/static/images/sunset.jpg')" onmouseout="hide_div()">
+                                    <img src="/static/images/Photo.jpg"  class=" img-thumbnail img-hover"alt="Photo2">
+                                  </td>
+                                  <td width="250px" id="row22" onmouseover="myfunction('/static/images/Photo.jpg','/static/images/Books.jpg')" onmouseout="hide_div()">
+                                    <img src="/static/images/sunset.jpg" class="img-thumbnail img-hover"alt="Photo3">
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+
+
+
+         </body>
+</html>
